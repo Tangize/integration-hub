@@ -1,0 +1,28 @@
+---
+// No need for imports in the basic layout file if none are needed.
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangize</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tangize</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/deh">DEH Suite</a>
+        <a href="/community">Community</a>
+        <a href="/shop">Shop</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>&copy; 2024 Tangize Corporation. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,21 +1,9 @@
+// Astro Component for Tangize.com Homepage
 ---
 import Layout from '../components/Layout.astro';
-import '../styles/global.css';
 ---
 
 <Layout>
-  <header class="header">
-    <img src="/Image.jpeg" alt="Tangize Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/deh">DEH Suite</a></li>
-        <li><a href="/community">Community</a></li>
-        <li><a href="/shop">Shop</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <section class="hero">
     <h1>Welcome to Tangize</h1>
     <p>Your central hub for Digital Existential Holography, personal coaching, and community growth.</p>
@@ -38,7 +26,37 @@ import '../styles/global.css';
       <a href="/manifesto">Read the Manifesto</a>
     </div>
   </section>
+
+  <style>
+    .hero {
+      background-color: #0077cc;
+      color: white;
+      padding: 4rem;
+      text-align: center;
+    }
+
+    .offerings {
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .offering {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .offering a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #0077cc;
+      font-weight: bold;
+    }
+  </style>
 </Layout>
-<footer>
-  <p>&copy; 2024 Tangize Corporation. All rights reserved.</p>
-</footer>
